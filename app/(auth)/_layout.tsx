@@ -1,12 +1,31 @@
-import { Text, View } from 'react-native'
-import React from 'react'
+import { Tabs } from 'expo-router'
+import { StatusBar } from 'expo-status-bar'
 
 const AuthLayout = () => {
   return (
-    <View>
-      <Text>AuthLayout</Text>
-    </View>
+      <Tabs>
+        <Tabs.Screen
+          name="sign-in"
+          options={{
+            headerShown: false,
+          }}
+        />
+        <Tabs.Screen
+          name="sign-up"
+          options={{
+            headerShown: false,
+          }}
+        />
+        {/* <StatusBar 
+          style="light" 
+          backgroundColor="black"
+        /> */}
+      </Tabs>
   )
 }
 
+{/* <StatusBar 
+    style="light" 
+    backgroundColor="black" 
+  /> */}
 export default AuthLayout

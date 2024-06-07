@@ -11,7 +11,11 @@ https://www.nativewind.dev/quick-starts/expo
 ```bash
 npx expo install expo-router react-native-safe-area-context react-native-screens expo-linking expo-constants expo-status-bar
 
-npx expo install react-native-web react-dom
+npm install react-native-web react-dom
+
+npm install react-native-paper
+
+npm install react-native-fs
 ```
 
 2. Start the app

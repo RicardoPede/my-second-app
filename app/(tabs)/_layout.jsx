@@ -4,9 +4,8 @@ import { Icon, useTheme } from 'react-native-paper'
 
 const TabsLayout = () => {
     const theme = useTheme()
-    console.log(theme)
+
     return (
-        <>
             <Tabs
                 initialRouteName="home"
                 screenOptions={{
@@ -81,7 +80,6 @@ const TabsLayout = () => {
                     }}
                 />
             </Tabs>
-        </>
     )
 }
 
