@@ -1,6 +1,6 @@
 import task from '@/assets/data/task.json'
 
-const TaskServices = {
+export const TaskServices = {
     getTasks: () => {
         const newTasks = task.map((t) => {
             return {
@@ -34,4 +34,3 @@ const TaskServices = {
     },
 }
 
-export default TaskServices

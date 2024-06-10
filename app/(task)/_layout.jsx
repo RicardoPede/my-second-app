@@ -12,6 +12,11 @@ const ToDoLayout = () => {
         name='create-task'
         options={{ title: 'Create Task' }}
       />
+
+      <Tabs.Screen
+        name='edit-task'
+        options={{ title: 'Edit Task' }}
+      />
     </Tabs>
   )
 }

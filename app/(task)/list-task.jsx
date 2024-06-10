@@ -2,7 +2,7 @@ import { StyleSheet, Text, View, FlatList, Alert } from 'react-native'
 import { useEffect, useState } from 'react'
 import CustomButton from '@/components/CustomButton'
 import { router } from 'expo-router'
-import TaskServices from '../../services/task.services'
+import { TaskServices } from '../../services/task.services.ts'
 import { List } from 'react-native-paper'
 
 const index = () => {
@@ -20,7 +20,6 @@ const index = () => {
     }, []);
 
     const handlePress = (screen) => () => {
-        console.log('press screen', screen);
         router.navigate(screen)
     }
 
@@ -60,6 +59,10 @@ const index = () => {
                                     <CustomButton 
                                         title="Edit"
                                         handlePress={() => Alert.alert('Edit', 'Edit Task')}
+                                    />
+                                    <CustomButton
+                                        title="Detail"
+                                        handlePress={() => Alert.alert('Detail', 'Detail Task')}
                                     />
                                     <CustomButton 
                                         title="Delete"
